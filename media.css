@@ -1,0 +1,15 @@
+.navigace {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+
+
+}
+@media screen and (max-width: 998px){
+    .navigace{
+        flex-direction: column;
+    }
+    
+    
+}

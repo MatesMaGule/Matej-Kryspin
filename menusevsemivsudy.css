@@ -1,0 +1,85 @@
+.navigace a {
+    border: 0
+}
+
+.navigace a:hover {
+    background: #81C1F5;
+    color: #0D6AB7
+    
+}
+
+
+
+.navigace,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+   
+}
+
+.navigace li {
+    display: block;
+}
+
+.navigace li a {
+    display: block;
+    padding: .5em 10px;
+    color: navy
+}
+
+.navigace>li {
+    position: relative;
+    margin-bottom: .2em;
+    border: 1px solid transparent;
+    height: 3em;
+    background: #81C1F5
+}
+
+.navigace>li:hover {
+    border: 1px solid #0D6AB7;
+    z-index: 1
+}
+
+.navigace>li>a {
+
+    top: 0;
+    left: 0;
+    width: 260px;
+    line-height: 2em;
+    background: #81C1F5
+}
+
+.navigace>li:hover>a {
+    z-index: 11
+}
+
+.navigace li ul {
+    display: none; /*dulezityyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
+    position: absolute;
+    left: -1px;
+    top: 48px;
+    width: 260px;
+   
+    background: #81C1F5;
+    border: 1px solid #0D6AB7;
+    border-bottom-width: 3px;
+    z-index: 10
+}
+
+.navigace li:hover ul {
+    display: flex; /*dulezityyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
+    flex-direction: column;
+}
+
+.navigace ul a {
+    float: left;
+    width: 260px;
+    text-align: center;
+}
+
+.navigace ul a:hover {
+    text-decoration: none;
+    background: #0D6AB7;
+    color: #fff
+}
